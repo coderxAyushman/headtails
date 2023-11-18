@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coin flip</title>
+</head>
+<style type="text/css">
+	body{
+		display: flex;
+		justify-content: center;
+	}
+	.container{
+		border: 5px double black;
+		height: 260px;
+		width: 270px;
+	}
+	.banu{
+
+		height: 80px;
+		width: 80px;
+		margin-top: 5px;
+		border: cyan;
+		margin-left: 88px;
+	}
+	.img{
+		height: 80px;
+		width: 80px;
+		margin-top: 5px;
+		border:5px solid cyan;
+	}
+	.b-tt{
+	     border: 5px solid red;
+	     margin-right: 70px;
+	     width: 100px;
+	}
+	.btt{
+		margin-top: 5px;
+          border: 5px solid red;
+          width: 100px;
+	}
+	h1{
+		text-align: center;
+	}
+	h2{
+        text-anchor: middle;
+        text-decoration: underline;
+        text-align: center;
+	}
+	.line{
+        text-anchor: middle;
+        text-decoration: overline;
+        text-align: center;
+	}
+</style>
+<script src="coinflip.js"></script>
+<body>
+     <div class="container">
+     	<h1>COIN FLIP!</h1>
+     	<button class="banu" onclick="alert('Choose head or tail.')"><img class="img" src="https://usagif.com/wp-content/uploads/gifs/coin-flip-38.gif"></button><br/>
+     	<button class="b-tt" onclick="playGame('Head')">HEAD</button><button class="btt" onclick="playGame('Tail')">TAIL</button>
+     </div>
+          	<h2 class="line" id="retun"></h2>
+</body>
+</html>
